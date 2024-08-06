@@ -1,0 +1,183 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  background-color: #000000;
+  height: 100vh;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  padding: 15px 0;
+  max-width: 414px;
+  gap: 12px;
+  position: relative;
+  margin-top: 68px;
+
+  align-items: center;
+}
+
+.light { /* div que causa um efeito de luz atrás da imagem principal */
+  width: 358px;
+  height: 248px;
+  background: #fff;
+  position: absolute; /* fica por cima da imagem do site */
+  z-index: -1; /* determina qual elemento deve ser exibido sobre outros quando eles se sobrepõem, nesse caso ele ficara sob a imagem principal, abaixo dela*/
+  opacity: 0.75; 
+  filter: blur(30px);
+  border-radius: 126px;
+}
+
+h1 {
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 32.8px;
+  text-align: center;
+  color: #ffffff;
+  margin-top: 42px;
+  margin-bottom: 50px;
+}
+
+.credencials {
+  width: 100%;
+}
+
+label {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+label {
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 22px;
+  color: rgba(255, 255, 255, 0.6);
+  margin-bottom: 4px;
+  margin-left: 4px;
+}
+
+input {
+  width: 100%;
+  height: 65px;
+  margin-bottom: 8px;
+  background: transparent;
+  outline: none;
+  border: none;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.6);
+
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 20px;
+  letter-spacing: -0.24px;
+  color: rgba(255, 255, 255, 1);
+
+  padding-left: 4px;
+}
+
+input::placeholder {
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 20px;
+  letter-spacing: -0.24px;
+  color: rgba(255, 255, 255, 1);
+}
+
+button {
+  width: 100%;
+  height: 68px;
+  border: none;
+  cursor: pointer;
+  transition: 0.3s ease; /* usada para definir a duração, o tipo de animação e quais propriedades devem ser animadas*/
+}
+
+button:hover {
+  opacity: 0.8;
+}
+
+button:active {
+  opacity: 0.6;
+}
+
+.btn-login {
+  margin-top: 20px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+
+  background-color: rgba(217, 56, 86, 1);
+  font-weight: 500;
+  font-size: 17px;
+  line-height: 2.5px;
+  text-align: center;
+  color: rgba(255, 255, 255, 1);
+}
+
+i {
+  font-weight: 500;
+  font-size: 22px;
+  line-height: 2.5px;
+}
+
+.btn-google {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+
+  font-weight: 500;
+  font-size: 17px;
+  line-height: 2.5px;
+  color: rgba(255, 255, 255, 1);
+  background-color: rgba(255, 255, 255, 0.14);
+}
+
+.link {
+  position: relative;
+  margin-top: 20px;
+}
+
+a {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 16.41px;
+
+  color: rgba(255, 255, 255, 0.6);
+
+  text-decoration: none; /* retira o sublinhado */
+}
+
+a::after {
+  content: "";
+  width: 0;
+  height: 2px;
+  position: absolute;
+  background-color: rgba(217, 56, 86, 1);
+  bottom: -3px;
+  left: 0;
+  transition: 0.3s ease;
+}
+
+a:hover::after{
+  content: "";
+  width: 100%;
+  height: 2px;
+  position: absolute;
+  background-color: rgba(217, 56, 86, 1);
+  bottom: -3px;
+  left: 0;
+  
+}
+  
+span {
+  color: #ffffff;
+}
